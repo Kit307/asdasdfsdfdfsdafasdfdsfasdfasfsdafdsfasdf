@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://media.istockphoto.com/id/1226386322/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B9%80%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%97%E0%B8%B1%E0%B8%94%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A3-w.jpg?s=612x612&w=0&k=20&c=RinI6CDFG6HZIgQvaaLmrwwG34lIgbgCUwPEzqnG_0c=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/index.css" rel="stylesheet" />
+    <link href="../src/input.css" rel="stylesheet" />
+    <link href="../src/profile.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  
+
+
+    <title>Worachet b</title>
+  </head>
+  <body>
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 ml-3 mt-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <aside
+      id="logo-sidebar"
+      class="w-64 fixed left-0 top-0 h-screen transition-transform -translate-x-full sm:translate-x-0 z-40"
+      aria-label="Sidebar"
+    >
+      <div
+        class="px-3 py-04 overflow-y-auto bg-blue-200 dark:bg-blue-800 h-full grid grid-cols-1 place-content-center border-r-8 border-dashed border-back-200 dark:border-white-700 border-0"
+      >
+        <a
+          class="flex place-content-center border-dashed border-blue-200 dark:border-blue-700 border-2 rounded-lg"
+        >
+          <img
+            src="../src/assets/alex.jpg"
+            alt="profile"
+            width="100"
+            class="max-w-full h-auto rounded-full"
+          />
+        </a>
+        <div class="flex h-auto"></div>
+        <a href="#" class="ml-5 items-center place-content-center mb-5"
+          ><span
+            id="typed5"
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-gray-800 hover:text-bule-600"
+            style="white-space: pre"
+          ></span>
+        </a>
+        <!-- <ul class="space-y-2 place-content-center">
+          <li>
+            <a
+              href="#aboutme"
+              type="button"
+              class="js-scroll-trigger flex items-center p-2 text-base place-content-center font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">About Me</span>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a
+              href="#education"
+              class=" js-scroll-trigger flex items-center p-2 text-base place-content-center font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Education</span>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a
+              href="#skill"
+              class="js-scroll-trigger flex items-center p-2 text-base place-content-center font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Skill</span>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a
+              href="#certificate"
+              class="js-scroll-trigger flex items-center p-2 text-base place-content-center font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Certificate</span>
+            </a>
+          </li>
+          <li></li>
+        </ul>-->
+        <div
+          class="w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-5 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20"
+          style="top: 6em"
+          id="menu-content"
+        >
+          <ul class="list-reset py-2 md:py-0">
+            <li
+              class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent font-bold border-blue-600"
+            >
+              <a
+                href="#aboutme"
+                class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-600"
+              >
+                <span class="pb-1 md:pb-0 mid-font serif">About Me</span>
+              </a>
+            </li>
+            <li
+              class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent"
+            >
+              <a
+                href="#education"
+                class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-600"
+              >
+                <span class="pb-1 md:pb-0 mid-font serif">Education</span>
+              </a>
+            </li>
+            <li
+              class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent"
+            >
+              <a
+                href="#skill"
+                class="block pl-4 align-middle text-gray-700 no-underline hover:text-blue-600"
+              >
+                <span class="pb-1 md:pb-0 mid-font serif">Skill</span>
+              </a>
+            </li>
+
+            <li
+              class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent"
+            >
+              <a
+                href="#certificate"
+                class="block pl-4 align-middle text-gray-700 no-underline hover:text-bule-600"
+              >
+                <span class="pb-1 md:pb-0 mid-font serif">Certificate</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sm:ml-64">
+      <div
+        class="m-4 p-4 border-dashed border-blue-200 dark:border-blue-700 border-2 m-4 p-4 border-dashed border-blue-200 dark:border-blue-700 border-2 rounded-lg"
+      >
+        <div class="container mx-auto">
+          <p class="dark:text-white text-gray-800"></p>
+          <section class="p-3 p-lg-5" id="aboutme">
+            <br /><br /><br />
+            <div class="my-auto js-show-on-scroll leading-tight">
+              <div class="content color0 span-3-75 my-9 mt-1">
+                <h1 class="big-font">Hello, my name<br /></h1>
+                <h1 class="big-font serif text-green-600">Worachet Baramee</h1>
+                <h2 class="mid-font my-2 mt-8">
+                  I am a computer science student. I have a passion for
+                  technology and its potential to change the world.
+                  <h2 class="mid-font">
+                    My areas of interest include
+                    <strong class="text-green-600"
+                      >Artificial Intelligence, Cybersecurity, Web Development,
+                      Back End Developer, etc.</strong
+                    >
+                  </h2>
+                  <h2 class="mid-font">
+                    I have had the opportunity to apply my knowledge to several
+                    projects, such as Project basic unity, Web Application
+                    Programming, and Basic Arduino.
+                  </h2>
+                  <h2 class="mid-font">
+                    These experiences have allowed me to develop a strong
+                    foundation in
+                    <strong class="text-green-600"
+                      >programming languages, databases, etc.</strong
+                    >
+                  </h2>
+                  <h2 class="mid-font">
+                    I am eager to continue my learning journey and make a
+                    positive impact in the field of computer science. I believe
+                    that with my dedication and hard work, I have the potential
+                    to become a successful and valuable contributor to the
+                    industry. Thank you for considering my introduction.
+                    Sincerely
+                  </h2>
+
+                  <h1 class="mt-5">Worachet Baramee</h1>
+                  <h1 class="list-inline list-social-icons mb-0 mt-10">
+                    <a
+                      href="https://www.facebook.com/WorachetBaramee/"
+                      target="_blank"
+                    >
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span>
+                        
+                      </span>
+                    </a>
+                    <a href="https://github.com/RoyalEx13" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                    <a href="mailto:royalex1305@gmail.com?" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </h1>
+                </h2>
+              </div>
+              <br /><br /><br />
+            </div>
+          </section>
+          <section class="profile-section p-3 p-lg-5" id="education">
+            <div class="my-auto js-show-on-scroll">
+              <h1 class="mb-0 big-font serif">Education</h1>
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="mr-auto mt-20">
+                  <strong class="text-green-600 big-font serif"
+                    >Maejo University</strong
+                  >
+                  <div class="subheading mb-3 my-3 serif">
+                    Bachelor of Science (Computer Science)
+                  </div>
+                  <p>GPA: 3.8</p>
+                </div>
+                <div class="mb-5 text-right">
+                  <span class="text-primary">May 2020 - now</span>
+                </div>
+
+                <strong class="text-green-600 big-font serif"
+                  >Dhammaraj Suksa School</strong
+                >
+                <div class="subheading mb-3 my-3 serif">
+                  Mathematics-Science
+                </div>
+                <p>GPA: 2.5</p>
+              </div>
+              <div class="resume-date text-right">
+                <span class="text-primary">May 2014 - October 2020</span>
+              </div>
+            </div>
+          </section>
+          <section class="profile-section p-3 p-lg-5" id="skill">
+            <div class="my-auto js-show-on-scroll">
+              <h1 class="mb-0 big-font serif">Skill & Tool</h1>
+              <h1 class="mb-0 mid-font mt-3 ml-10 text-green-600">Skill</h1>
+              <div class="grid grid-cols-6 gap-2 ml-10 mt-3">
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        fill="#F0DB4F"
+                        class="icon"
+                        d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    JavaScript
+                  </h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#E44D26"
+                        d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">HTML5</h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#1572B6"
+                        d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626L119.24 1H8.76zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336L64 101.607v.001l-.022.019-28.311-7.888L33.75 72h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229L81.075 65H48.792l-.277-3.043-.631-7.129L47.553 51h34.749l1.264-14H30.64l-.277-3.041-.63-7.131L29.401 23h69.281l-.331 3.862z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">CSS3</h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#EA2D2E"
+                        d="M53.595 67.817c-13.224 3.694 8.044 11.325 24.88 4.112-2.757-1.071-4.735-2.309-4.735-2.309-7.508 1.419-10.99 1.531-17.805.753-5.625-.644-2.34-2.556-2.34-2.556zm22.864-7.207c-9.95 1.915-15.698 1.854-22.979 1.103-5.629-.582-1.944-3.311-1.944-3.311-14.563 4.834 8.106 10.318 28.459 4.365-2.162-.761-3.536-2.157-3.536-2.157zm7.799-41.731s-29.439 7.351-15.38 23.552c4.151 4.778-1.088 9.074-1.088 9.074s10.533-5.437 5.696-12.248c-4.518-6.349-7.982-9.502 10.772-20.378zM37.48 81.305c34.324 5.563 62.567-2.506 53.666-6.523 0 0 2.431 2.005-2.679 3.555-9.715 2.943-40.444 3.831-48.979.117-3.066-1.335 2.687-3.187 4.496-3.576 1.887-.409 2.965-.334 2.965-.334-3.412-2.404-22.055 4.718-9.469 6.761zm41.868-27.42c1.65-1.126 3.93-2.104 3.93-2.104s-6.492 1.161-12.961 1.704c-7.918.664-16.412.795-20.676.225-10.095-1.35 5.534-5.063 5.534-5.063s-6.07-.411-13.533 3.199c-8.827 4.269 21.832 6.214 37.706 2.039zm3.865 10.432c-.074.2-.322.425-.322.425 21.546-5.664 13.624-19.965 3.322-16.345-.903.319-1.378 1.063-1.378 1.063s.571-.23 1.845-.496c5.207-1.084 12.669 6.972-3.467 15.353zM65.006 48.492c-3.179-7.186-13.957-13.471.005-24.498 17.41-13.742 8.476-22.682 8.476-22.682 3.604 14.197-12.711 18.486-18.6 27.328-4.01 6.024 1.969 12.499 10.119 19.852zm18.79 35.651c-13.219 2.488-29.524 2.199-39.191.603 0 0 1.98 1.64 12.157 2.294 15.484.99 39.269-.551 39.832-7.878 0-.001-1.082 2.776-12.798 4.981zM51.131 99.535c-2.887 0-5.351.714-7.408 1.622l.624 2.493c1.619-.595 3.618-1.147 5.674-1.147 2.85 0 3.979 1.147 3.979 3.521V108h-1.2c-6.921 0-10.044 2.585-10.044 6.624 0 3.479 2.059 5.407 5.933 5.407 2.49 0 4.351-.845 6.088-2.35l.316 2.319H58v-14.492c0-3.599-1.924-5.973-6.869-5.973zM54 115.037c-1 1.266-2.893 1.978-4.279 1.978-1.973 0-2.988-1.371-2.988-3.27 0-2.056 1.202-3.745 5.794-3.745H54v5.037zm15.611.644l-.835-3.608L65.02 100h-4.39l6.051 20h5.026c2.884-7 4.943-14 6.086-20h-4.271c-.671 5-2.016 10.424-3.911 15.681zm18.404-16.146c-2.889 0-5.411.714-7.467 1.622l.596 2.493c1.621-.595 3.722-1.147 5.778-1.147 2.846 0 4.078 1.147 4.078 3.521V108h-1.428c-6.923 0-10.045 2.585-10.045 6.624 0 3.479 2.056 5.407 5.93 5.407 2.492 0 4.349-.845 6.091-2.35l.318 2.319H95v-14.492c0-3.599-2.044-5.973-6.985-5.973zm-1.411 17.462c-1.975 0-3.046-1.363-3.046-3.261 0-2.055 1.149-3.736 5.736-3.736H91v5h-.067c-1.465 1-2.947 1.997-4.329 1.997zM36 115.373c0 3.271-.445 4.638-.979 5.701-.615 1.193-2.053 2.475-3.601 3.269l1.934 2.345c2.032-.749 3.943-2.078 5.092-3.757 1.15-1.723 1.554-3.491 1.554-7.867V93h-4v22.373z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    Java OOP
+                  </h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <g class="icon" fill="#7F6CB1">
+                        <path
+                          d="M0 0h61.4L0 60.4zM0 128L128 0H64.6L0 63.7zM128 128L64.6 66.6 3.3 128z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <h1 class="flex items-center place-content-center">Kotlin</h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#FFD845"
+                        d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">Python</h1>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-6 gap-2 ml-10 mt-10">
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M113.823 104.595c-1.795-1.478-3.629-2.921-5.308-4.525-1.87-1.785-3.045-3.944-2.789-6.678.147-1.573-.216-2.926-2.113-3.452.446-1.154.864-1.928 1.033-2.753.188-.92.178-1.887.204-2.834.264-9.96-3.334-18.691-8.663-26.835-2.454-3.748-5.017-7.429-7.633-11.066-4.092-5.688-5.559-12.078-5.633-18.981a47.564 47.564 0 00-1.081-9.475C80.527 11.956 77.291 7.233 71.422 4.7c-4.497-1.942-9.152-2.327-13.901-1.084-6.901 1.805-11.074 6.934-10.996 14.088.074 6.885.417 13.779.922 20.648.288 3.893-.312 7.252-2.895 10.34-2.484 2.969-4.706 6.172-6.858 9.397-1.229 1.844-2.317 3.853-3.077 5.931-2.07 5.663-3.973 11.373-7.276 16.5-1.224 1.9-1.363 4.026-.494 6.199.225.563.363 1.429.089 1.882-2.354 3.907-5.011 7.345-10.066 8.095-3.976.591-4.172 1.314-4.051 5.413.1 3.337.061 6.705-.28 10.021-.363 3.555.008 4.521 3.442 5.373 7.924 1.968 15.913 3.647 23.492 6.854 3.227 1.365 6.465.891 9.064-1.763 2.713-2.771 6.141-3.855 9.844-3.859 6.285-.005 12.572.298 18.86.369 1.702.02 2.679.653 3.364 2.199.84 1.893 2.26 3.284 4.445 3.526 4.193.462 8.013-.16 11.19-3.359 3.918-3.948 8.436-7.066 13.615-9.227 1.482-.619 2.878-1.592 4.103-2.648 2.231-1.922 2.113-3.146-.135-5zM62.426 24.12c.758-2.601 2.537-4.289 5.243-4.801 2.276-.43 4.203.688 5.639 3.246 1.546 2.758 2.054 5.64.734 8.658-1.083 2.474-1.591 2.707-4.123 1.868-.474-.157-.937-.343-1.777-.652.708-.594 1.154-1.035 1.664-1.382 1.134-.772 1.452-1.858 1.346-3.148-.139-1.694-1.471-3.194-2.837-3.175-1.225.017-2.262 1.167-2.4 2.915-.086 1.089.095 2.199.173 3.589-3.446-1.023-4.711-3.525-3.662-7.118zm-12.75-2.251c1.274-1.928 3.197-2.314 5.101-1.024 2.029 1.376 3.547 5.256 2.763 7.576-.285.844-1.127 1.5-1.716 2.241l-.604-.374c-.23-1.253-.276-2.585-.757-3.733-.304-.728-1.257-1.184-1.919-1.762-.622.739-1.693 1.443-1.757 2.228-.088 1.084.477 2.28.969 3.331.311.661 1.001 1.145 1.713 1.916l-1.922 1.51c-3.018-2.7-3.915-8.82-1.871-11.909zM87.34 86.075c-.203 2.604-.5 2.713-3.118 3.098-1.859.272-2.359.756-2.453 2.964a101.744 101.744 0 00-.012 7.753c.061 1.77-.537 3.158-1.755 4.393-6.764 6.856-14.845 10.105-24.512 8.926-4.17-.509-6.896-3.047-9.097-6.639.98-.363 1.705-.607 2.412-.894 3.122-1.27 3.706-3.955 1.213-6.277-1.884-1.757-3.986-3.283-6.007-4.892-1.954-1.555-3.934-3.078-5.891-4.629-1.668-1.323-2.305-3.028-2.345-5.188-.094-5.182.972-10.03 3.138-14.747 1.932-4.209 3.429-8.617 5.239-12.885.935-2.202 1.906-4.455 3.278-6.388 1.319-1.854 2.134-3.669 1.988-5.94-.084-1.276-.016-2.562-.016-3.843l.707-.352c1.141.985 2.302 1.949 3.423 2.959 4.045 3.646 7.892 3.813 12.319.67 1.888-1.341 3.93-2.47 5.927-3.652.497-.294 1.092-.423 1.934-.738 2.151 5.066 4.262 10.033 6.375 15 1.072 2.524 1.932 5.167 3.264 7.547 2.671 4.775 4.092 9.813 4.07 15.272-.012 2.83.137 5.67-.081 8.482z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    Basic Linux
+                  </h1>
+                </div>
+
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#00618A"
+                        d="M125.477 122.783l-2.616-2.537c-2.479-3.292-5.668-6.184-9.015-8.585-2.669-1.916-8.661-4.504-9.775-7.609l-.205-.195c1.893-.214 4.103-.898 5.85-1.367 2.934-.786 5.356-.583 8.386-1.365 1.366-.39 2.899-.781 3.899-1.171v-.78c-1-1.571-2.427-3.651-4.097-5.073-4.369-3.72-9.041-7.437-13.951-10.537-2.723-1.718-6.041-2.835-8.926-4.292-.971-.491-2.652-.746-3.294-1.562-1.517-1.932-2.328-4.382-3.498-6.633-2.449-4.717-4.849-9.868-7.019-14.831-1.48-3.384-2.443-6.72-4.289-9.756-8.86-14.567-18.395-23.358-33.167-32-3.145-1.838-6.929-2.563-10.929-3.513-2.144-.129-4.291-.26-6.437-.391-1.311-.546-2.674-2.149-3.902-2.927-4.896-3.092-17.449-9.817-21.074-.975-2.289 5.581 3.42 11.025 5.462 13.854 1.435 1.982 3.27 4.207 4.293 6.438.675 1.467.79 2.938 1.367 4.489 1.418 3.822 2.651 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.95 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.898 21.567 2.537 28.683 1.36 2.186 4.566 6.871 8.975 5.073 3.856-1.57 3.226-6.438 4.329-10.732.249-.972-.185-1.688.815-2.341v.195a128.6 128.6 0 003.282 7.024c2.6 4.187 6.889 8.562 10.798 11.514 2.027 1.531 3.92 4.177 5.92 5.073v-.101h.221c-.507-1-1.302-1.167-1.95-1.804-1.527-1.496-3.226-3.382-4.487-5.097-3.556-4.827-6.698-10.122-9.561-15.622-1.368-2.626-2.557-5.529-3.709-8.201-.443-1.03-.438-2.592-1.364-3.125-1.263 1.958-3.122 3.54-4.099 5.853-1.561 3.696-1.762 8.204-2.341 12.877-.343.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.555-6.07-3.029-15.843-.781-22.829.582-1.809 3.211-7.501 2.146-9.172-.508-1.665-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.123-5.464-2.091-4.731-3.066-10.044-5.268-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.684-6.635-.445-.968-1.051-2.518-.39-3.513.21-.671.507-.951 1.171-1.17 1.133-.873 4.283.29 5.463.779 3.129 1.3 5.741 2.5 8.392 4.256 1.271.844 2.559 1.89 4.097 2.89h1.756c2.747 0 5.824.232 8.391 1.012 4.535 1.379 8.6 3.542 12.292 5.873 11.246 7.102 20.441 17.22 26.732 29.278 1.012 1.942 1.45 3.799 2.341 5.858 1.798 4.153 4.064 8.428 5.853 12.489 1.786 4.053 3.526 8.142 6.05 11.514 1.327 1.772 6.451 2.724 8.78 3.709 1.633.689 4.308 1.409 5.854 2.34 2.953 1.782 5.814 3.904 8.586 5.855 1.384.974 5.64 3.114 5.853 4.878-6.863-.188-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.069 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.576 2.751 5.464 3.902 3.359 2.047 7.107 3.217 10.341 5.268 1.906 1.21 3.958 2.733 5.815 4.097.92.675.891 1.724 2.891 2.147v-.194c-.999-.795-.946-1.893-1.522-2.728zM29.514 23.465c-1.431-.027-2.514.157-3.514.389V24h.198c.683 1 1.888 2.33 2.731 3.538l1.952 4.108.193-.187c1.209-.853 1.763-2.211 1.756-4.291-.483-.509-.556-1.146-.974-1.754-.558-.809-1.639-1.268-2.342-1.949z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">MySQL</h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        d="M27.235 13.885c-7.177 0-12.486 6.284-12.249 13.099.228 6.546-.068 15.026-2.203 21.94-2.14 6.936-5.76 11.319-11.673 11.883v6.387c5.913.563 9.533 4.947 11.673 11.883 2.135 6.914 2.43 15.394 2.203 21.94-.238 6.815 5.072 13.098 12.249 13.098h73.54c7.177 0 12.486-6.284 12.249-13.098-.228-6.546.068-15.026 2.202-21.94 2.14-6.935 5.751-11.319 11.664-11.883v-6.387c-5.913-.563-9.523-4.947-11.664-11.883-2.134-6.914-2.43-15.394-2.202-21.94.237-6.815-5.072-13.099-12.25-13.099zm58.114 61.686c0 9.384-7.002 15.073-18.621 15.073H45.306a.491.491 0 01-.491-.491V37.827a.491.491 0 01.491-.492h21.309c9.689 0 16.047 5.246 16.047 13.3 0 5.653-4.277 10.713-9.727 11.6v.296c7.418.813 12.414 5.948 12.414 13.04zM64.571 44.096H53.293v15.922h9.5c7.342 0 11.391-2.955 11.391-8.238 0-4.95-3.481-7.684-9.613-7.684zm-11.278 22.24v17.548h11.695c7.645 0 11.695-3.066 11.695-8.83 0-5.763-4.163-8.718-12.187-8.718z"
+                        fill="#7952b3"
+                      ></path>
+                    </svg>
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        fill="#38b2ac"
+                        d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                      ></path>
+                    </svg>
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        path
+                        d="M34.442 0l29.815 61.824L93.879 0H34.442zM0 18.667L64.257 128 128 18.667H94.843L64.257 80 33.349 18.667H0z"
+                        fill="#1697F6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    CSS Framework
+                  </h1>
+                </div>
+              </div>
+              <h1 class="mb-0 mid-font mt-5 ml-10 text-green-600">Tool</h1>
+              <div class="grid grid-cols-6 gap-2 ml-10 mt-3">
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg
+                      viewBox="0 0 128 128"
+                      width="75"
+                      height="75"
+                      class="icon"
+                      fill="#2489ca"
+                    >
+                      <path
+                        d="M3.656 45.043s-3.027-2.191.61-5.113l8.468-7.594s2.426-2.559 4.989-.328l78.175 59.328v28.45s-.039 4.468-5.757 3.976zm0 0"
+                      ></path>
+                      <path
+                        d="M23.809 63.379L3.656 81.742s-2.07 1.543 0 4.305l9.356 8.527s2.222 2.395 5.508-.328l21.359-16.238zm0 0M59.184 63.531l36.953-28.285-.239-28.297S94.32.773 89.055 3.99L39.879 48.851zm0 0"
+                      ></path>
+                      <path
+                        d="M90.14 123.797c2.145 2.203 4.747 1.48 4.747 1.48l28.797-14.222c3.687-2.52 3.171-5.645 3.171-5.645V20.465c0-3.735-3.812-5.024-3.812-5.024L98.082 3.38c-5.453-3.379-9.027.61-9.027.61s4.593-3.317 6.843 2.96v112.317c0 .773-.164 1.53-.492 2.214-.656 1.332-2.086 2.57-5.504 2.051zm0 0"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm flex items-center place-content-center">
+                    Visual Studio Code
+                  </p>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75">
+                      <path
+                        class="icon"
+                        d="M82.48 63.578l22.418-38.402 10.832 38.402-10.832 38.398zm-10.926 6.238l22.422 38.402-39.047-9.922-28.211-28.48zM93.969 18.93L71.555 57.34H26.719L54.93 28.855zm32 31.582L112.293.031 61.25 13.559l-7.555 13.18-15.336-.109L1 63.582l37.359 36.949h.004l15.324-.113 7.57 13.176 51.035 13.527 13.676-50.473-7.762-13.07zm0 0"
+                        fill="#110B09"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">Unity</h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75" class="icon" fill="#4285F4">
+                      <path
+                        
+                        d="M25.1 17.7l13.4.1c-4.9 4.9-7.8 11.2-8.8 18.3l-5.1-.1c-5.5-.2-9.8-4.3-9.7-9.3 0-5.1 4.5-9 10.2-9zm40.2 77.2c.9 2.2 6.9 14.4 6.9 14.4H55.1s5.5-11.5 6.7-14.4c1-2.2 2.5-2.3 3.5 0z"
+                      ></path>
+                      <path
+                        
+                        d="M114.9 47.9c-1.1 4.3-5.5 7.5-10.9 7.5h-5c-.3.1-.5.3-.4.6v53.3h-9.1L72 73.1c1.8-2 2.9-4.7 2.9-7.6 0-4.8-2.8-9.1-7-10.8v-4.9c0-2.1-1.8-3.6-3.9-3.6h-.2c-2.1 0-3.9 1.8-3.9 3.9v4.6c-4.6 1.5-8 5.8-8 11 0 3 1.2 5.8 3.1 7.8l-17 35.9H23.1c-5.7 0-10.2-4.6-10.2-10.3V29.7s0-.6.1 0c.8 4.8 5 8.5 10.1 8.6H100c-.1 0 14.6-1.3 14.9 9.6z"
+                      ></path>
+                      <path
+                        
+                        d="M63.3 59.8c3.1 0 5.7 2.6 5.6 5.8 0 3.1-2.6 5.7-5.8 5.6-3.1 0-5.6-2.6-5.6-5.7 0-1.5.6-2.9 1.7-4 1.2-1.1 2.6-1.7 4.1-1.7zm2.3-3.3v-6c0-.7-.3-1.3-.9-1.6-.9-.5-2-.2-2.5.7-.2.3-.3.6-.2 1v5.8c-5 .8-8.5 5.5-7.7 10.6v.1c.4 2.4 1.7 4.6 3.7 6l-21.3 45.7c-.8 1.6-.7 3.6.4 5.1 1.6 2.3 4.7 2.9 7 1.3.8-.5 1.4-1.3 1.8-2.1L60 92.5c.9-2 3.3-2.9 5.4-1.9.8.4 1.5 1.1 1.9 1.9l14.5 30.3c1.2 2.5 4.2 3.5 6.7 2.3s3.5-4.2 2.3-6.7L69 72.9c4-3.2 4.7-9.1 1.5-13.1-1.2-1.6-2.9-2.7-4.9-3.3m14-43.6h-.1l5.3-9.2c.3-.5.1-1.1-.3-1.5-.5-.2-1-.1-1.3.3L77.6 12c-8.7-3.9-18.7-3.9-27.5 0l-5.4-9.4c-.2-.3-.6-.6-1-.6s-.8.2-1 .6c-.2.4-.2.8 0 1.1l5.4 9.2c-8.8 4.9-14.6 13.3-16 23.1h63.8c-1.5-9.8-7.5-18.2-16.3-23.1zM51.2 28l-.4.4c-.5.5-1.2.8-1.9.8h.1c-1.5 0-2.7-1.2-2.7-2.6v-.1c0-.7.3-1.4.8-1.9.9-1.1 2.6-1.3 3.7-.4 1.3.9 1.4 2.6.4 3.8zm27.4 1c-1.5.1-2.7-1.1-2.7-2.6v-.1c0-.7.3-1.4.8-1.9 1-1 2.7-1 3.8 0 .5.5.8 1.2.8 1.9 0 1.6-1.2 2.7-2.7 2.7zm27.1 29h-4.2c-.2.1-.4.3-.4.6v66.5c0 .3.2.5.5.5h4.4c5.1 0 9.2-4.2 9.2-9.2 0 0-.1-61.1 0-63.4.1-2.4-.5-.7-.7-.2-1.5 3.2-4.8 5.3-8.6 5.3h-.2z"
+                      ></path>
+                      <circle
+                        fill="#4285F4"
+                        cx="63.3"
+                        cy="65.5"
+                        r="3.2"
+                      ></circle>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    Android Studio
+                  </h1>
+                </div>
+                <div
+                  class="box-content h-17 w-32 p-4 border-4 border-gray-700 bg-gray-200"
+                >
+                  <div
+                    class="h-full w-full bg-gray-400 flex items-center place-content-center"
+                  >
+                    <svg viewBox="0 0 128 128" width="75" height="75" class="icon" fill="#136ba2">
+                      <path
+                        d="M5.55 64.73a17.08 17.08 0 1017.08-17.09A17.11 17.11 0 005.55 64.73z"
+                      ></path>
+                      <path
+                        d="M107.48 4.73c-9.39 0-15 7.56-15 20.23v77.8c0 12.66 5.59 20.23 15 20.23s15-7.56 15-20.23V25c-.03-12.7-5.63-20.27-15-20.27zM81.25 6.38H19.88a14.92 14.92 0 000 29.81v.11h31.41v28.4a28.7 28.7 0 01-28.63 28.7h-.77l-.08.1c-.42 0-.85-.07-1.29-.07a14.94 14.94 0 100 29.87c.45 0 .9 0 1.34-.07v.05h.78a58.65 58.65 0 0058.61-58.55v-.54-9.59-.11V6.38z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="flex items-center place-content-center">
+                    IntelliJ IDEA
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="profile-section p-3 p-lg-5" id="certificate">
+            <div class="my-auto js-show-on-scroll">
+              <h1 class="mb-0 big-font">Certificate</h1>
+              <div class="grid grid-cols-2 gap-4 ml-10 mt-10">
+                <div
+                  class="overflow-hidden aspect-auto bg-red-400 cursor-pointer rounded-xl relative group mb-4"
+                >
+                  <div
+                    class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/100 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  >
+                    <div>
+                      <div
+                        class="ttransform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-5 translate-y-4 pb-10 transform transition duration-300 ease-in-out"
+                      >
+                        <div class="font-bold">
+                          certificate of professional qualification
+                        </div>
+
+                        <div class="opacity-60 text-sm">
+                          <h1>
+                            สาขาวิชาชีพ / Sector: อุตสาหกรรมดิจิทัล / Digital
+                          </h1>
+                          <h1>
+                            Industry สาขา / Sub-Sector: สาขาเกม / Games อาชีพ /
+                          </h1>
+                          <h1>
+                            Occupation: นักพัฒนาโปรแกรมเกม/ Game Developer
+                          </h1>
+                          การรับรองคุณวุฒิวิชาชีพ สาขาวิชาชีพอุตสาหกรรมดิจิทัล
+                          สาขาเกม อาชีพ นักพัฒนาโปรแกรมเกม ระดับ 4
+                          เลขที่การรับรองสมรรถนะบุคคล OCCN-0176A-65/001-000036
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    alt=""
+                    class="object-cover w-full aspect-auto group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="../src/assets/level4.png"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden aspect-auto bg-red-400 cursor-pointer rounded-xl relative group mb-4"
+                >
+                  <div
+                    class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/100 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  >
+                    <div>
+                      <div
+                        class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-5 translate-y-4 pb-10 transform transition duration-300 ease-in-out"
+                      >
+                        <div class="font-bold">
+                          Unity Certified User: Programmer
+                        </div>
+
+                        <div class="opacity-60 text-sm">
+                          certification exam will test the basics of C#
+                          programming within Unity software to create
+                          interactivity in games, apps, AR/VR, and other
+                          experiences. The exam objectives are aligned with
+                          current industry standards set by professionals and
+                          educators. Individuals will be expected to have at
+                          least 150 hours of Unity software use and training to
+                          obtain this certification
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    alt=""
+                    class="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="../src/assets/Unity.jpg"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4 ml-10 mt-10">
+                <div
+                  class="overflow-hidden aspect-auto bg-red-400 cursor-pointer rounded-xl relative group mb-4"
+                >
+                  <div
+                    class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/100 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  >
+                    <div>
+                      <div
+                        class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-5 translate-y-4 pb-10 transform transition duration-300 ease-in-out"
+                      >
+                        <div class="font-bold">AR VR MR And 3D</div>
+
+                        <div class="opacity-60 text-sm">
+                          โครงการความร่วมมือระหว่าง
+                          สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) และ
+                          สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL)
+                          จัดทำเพื่อพัฒนาทักษะด้านเทคโนโลยีและนวัตกรรม ให้กับ
+                          นักเรียน นิสิต นักศึกษา ในการพัฒนาหรือการออกแบบผลงาน
+                          AR VR MR ในระดับเบื้องต้น ด้วยโปรแกรม Unity
+                          เพื่อเป็นการเตรียมความพร้อมในการต่อยอดสู่การเรียน หรือ
+                          การทำงานด้านดิจิทัล ในอนาคต
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    alt=""
+                    class="object-cover w-full aspect-auto group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="../src/assets/depa.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../profile.js"></script>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+
+    <!-- Scroll Spy -->
+    <script>
+      /* http://jsfiddle.net/LwLBx/ */
+
+      // Cache selectors
+      var lastId,
+        topMenu = $("#menu-content"),
+        topMenuHeight = topMenu.outerHeight() + 175,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+          var item = $($(this).attr("href"));
+          if (item.length) {
+            return item;
+          }
+        });
+
+      // Bind click handler to menu items
+      // so we can get a fancy scroll animation
+      menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+          offsetTop =
+            href === "#" ? 0 : $(href).offset(-75).top - topMenuHeight + 1;
+        $("html, body").stop().animate(
+          {
+            scrollTop: offsetTop,
+          },
+          300
+        );
+        if (!helpMenuDiv.classList.contains("hidden")) {
+          helpMenuDiv.classList.add("hidden");
+        }
+        e.preventDefault();
+      });
+
+      // Bind to scroll
+      $(window).scroll(function () {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
+
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+          if ($(this).offset().top < fromTop) return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+          lastId = id;
+          // Set/remove active class
+          menuItems
+            .parent()
+            .removeClass("font-bold border-blue-600")
+            .end()
+            .filter("[href='#" + id + "']")
+            .parent()
+            .addClass("font-bold border-blue-600");
+        }
+      });
+
+      $(document).ready(function () {
+      $(this).scrollTop(0);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed5 = new Typed("#typed5", {
+        strings: ["Worachet Baramee", "Maejo University", "Computer Science"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        cursorChar: "_",
+        smartBackspace: true,
+        loop: true,
+      });
+    </script>
+    
+  </body>
+</html>

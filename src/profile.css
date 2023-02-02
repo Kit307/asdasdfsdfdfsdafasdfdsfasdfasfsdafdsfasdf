@@ -1,0 +1,108 @@
+section.profile-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+section.profile-section .profile-item .profile-date {
+    min-width: none;
+}
+
+@media (min-width: 768px) {
+    section.profile-section {
+        min-height: 100vh;
+    }
+
+    section.profile-section .profile-item .profile-date {
+        min-width: 19rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section.profile-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+}
+
+@media (min-width: 768px) {
+    .resume-date {
+        min-width: 18rem;
+    }
+}
+
+.big-font {
+    font-size: 3.5rem;
+}
+
+.mid-font {
+    font-size: 1.5em;
+}
+
+.serif {
+    font-family: Georgia, serif;
+}
+
+
+
+.text-pink-500 {
+    color: #ff69b4;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.list-social-icons a {
+    color: #495057;
+}
+
+.list-social-icons a:hover {
+    color: #43A047;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: #43A047;
+}
+
+.type-wrap {
+    margin: 10px auto;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: #CCC 1px solid;
+}
+
+/* .icon {
+
+    
+    
+} */
+.icon:hover {
+    fill : gray;
+}
